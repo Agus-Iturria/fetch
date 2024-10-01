@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabla de Usuarios</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Lista de Usuarios</h1>
+
+
+  <label for="roleFilter">Filtrar por rol:</label>
+  <select id="roleFilter">
+    <option value="all">Todos</option>
+    <option value="admin">Admin</option>
+    <option value="user">User</option>
+    <option value="clerk">Clerk</option>
+  </select>
+
+
+  <table id="userTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
